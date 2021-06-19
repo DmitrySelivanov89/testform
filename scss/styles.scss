@@ -202,6 +202,7 @@ body {
 
         .input-country {
           position: relative;
+          cursor: pointer;
 
           &:after {
             content: '';
