@@ -15,8 +15,8 @@
     <div class="section-inner">
       <div class="section-form-content">
         <div class="product">
-          <div class="section-form-logo-top">Reduslim</div>
-          <div class="section-form-logo-bottom">ECO</div>
+          <div class="logo-top">Reduslim</div>
+          <div class="logo-bottom">ECO</div>
         </div>
         <div class="section-form-wrapper">
           <div class="section-form-wrapper__title">
@@ -26,7 +26,7 @@
             <form tabindex="1" action="#" method="post">
               <div class="section-form-wrapper__form-input-container name">
                 <label for="username">ВАШЕ <span>ИМЯ</span></label>
-                <input tabindex="2" type="text" name="username" placeholder="Алексей">
+                <input tabindex="2" id="username" type="text" name="username" placeholder="Алексей">
               </div>
 
               <div class="section-form-wrapper__form-input-container phone">
@@ -34,10 +34,12 @@
                 <label for="userphone">ВАШ <span>ТЕЛЕФОН</span></label>
 
                 <div class="row">
-                  <input class="input-phone" tabindex="3" type="tel" name="userphone" placeholder="+7 (123) 456 78-90">
-
+                  <input class="input-phone" id="userphone" tabindex="3" type="tel" name="userphone"
+                    placeholder="+7 (123) 456 78-90">
                   <div class="input-country" id="country-select">
-                    <div id="selected-option" class="option option--selected" dataset-selected="ru">RU<img src="./img/flag.png" alt="flag"></div>
+                    <div id="selected-option" class="option option--selected" dataset-selected="ru">RU
+                      <img src="./img/flag.png" alt="flag">
+                    </div>
                     <div class="options">
                       <div class="option" data-value="ru">RU<img src="./img/flag.png" alt="flag"></div>
                       <div class="option" data-value="en">EN<img src="./img/flag.png" alt="flag"></div>
@@ -49,7 +51,11 @@
               <div class="section-form-wrapper__form-button">
                 <button tabindex="5" type="submit" class="btn">
                   Заказать
-                  <img src="./img/arrow.svg" alt="button-arow">
+                  <svg class="btn-arrow" width="18" height="12" viewBox="0 0 18 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 6H16.5M16.5 6L11.5 1M16.5 6L11.5 11" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </button>
               </div>
             </form>
@@ -58,6 +64,17 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <span class="trusted">Trusted</span>
+    <svg class="lock" width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="5.71429" width="12.1429" height="9.28572" rx="3" fill="#428A60" />
+      <path
+        d="M3.14282 3.92857C3.14282 2.31116 4.45399 1 6.07139 1C7.6888 1 8.99997 2.31117 8.99997 3.92857V6.85714H3.14282V3.92857Z"
+        stroke="#428A60" stroke-width="2" />
+    </svg>
+    <span class="secure">Secure</span>
+  </footer>
 
   <script src="scripts/index.js"></script>
 
